@@ -7,3 +7,11 @@
     reprehenderit rem?
   </p>
 </div>
+<ul class="grid animate__animated animate__fadeIn">
+  <div>
+    <li class="card" *ngFor="let item of resultados">
+      <p>{{ item.title }}</p>
+      <img [src]="item.url" alt="" />
+    </li>
+  </div>
+</ul>
